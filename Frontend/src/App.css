@@ -97,3 +97,15 @@ body{background:radial-gradient(circle at 85% 0,#eee9ff 0,transparent 30%),var(-
 /* Recharts X eksenini kart sınırının içine taşı */
 @media(min-width:1101px){.finance-overview>.card .recharts-xAxis{transform:translateY(-13px)!important}.finance-overview>.card .recharts-xAxis .recharts-cartesian-axis-tick{transform:translateY(-2px)!important}.finance-overview>.card .recharts-surface{overflow:visible}}
 .finance-overview>.card .chart-wrap.v2{height:230px}.finance-overview>.card .chart-wrap.v2 .recharts-responsive-container{height:230px!important}.finance-overview>.card .chart-wrap.v2 .recharts-xAxis,.finance-overview>.card .chart-wrap.v2 .recharts-xAxis .recharts-cartesian-axis-tick{transform:none!important}
+
+
+@media(max-width:820px){
+.sidebar{width:min(86vw,300px);height:100dvh;padding:20px 16px;overflow:hidden}
+.sidebar .logo{flex:0 0 auto;padding:0 8px 20px}
+.sidebar nav{flex:1 1 auto;min-height:0;overflow-y:auto;align-content:start;padding-bottom:12px;overscroll-behavior:contain}
+.sidebar-user{flex:0 0 auto;margin-top:8px;padding:14px 6px 0;background:transparent}
+.sidebar-user>div:nth-child(2){flex:1;overflow:hidden}
+.sidebar-user button{width:42px;height:42px;flex:0 0 42px;border-radius:11px;background:#302c50;color:#fff}
+body:has(.sidebar.open) .mobile-nav,body:has(.sidebar.open) .theme-toggle{display:none}
+}
+.chart-wrap:has(.chart-empty) .chart-empty{inset:8px 10px 20px;z-index:2;padding:24px;border:1px dashed var(--line);border-radius:14px;background:var(--card);line-height:1.6}
