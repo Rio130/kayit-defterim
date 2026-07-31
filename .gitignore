@@ -1,0 +1,12 @@
+**/bin/
+**/obj/
+**/.vs/
+**/node_modules/
+**/dist/
+*.user
+*.suo
+.env
+.env.*
+!.env.example
+Backend/MoneyTrack.API/appsettings.json
+Backend/MoneyTrack.API/appsettings.Development.json
