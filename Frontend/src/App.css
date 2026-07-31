@@ -109,3 +109,8 @@ body{background:radial-gradient(circle at 85% 0,#eee9ff 0,transparent 30%),var(-
 body:has(.sidebar.open) .mobile-nav,body:has(.sidebar.open) .theme-toggle{display:none}
 }
 .chart-wrap:has(.chart-empty) .chart-empty{inset:8px 10px 20px;z-index:2;padding:24px;border:1px dashed var(--line);border-radius:14px;background:var(--card);line-height:1.6}
+
+/* Grafik çizgilerini boş durum mesajının altında görünür tut */
+.chart-wrap:has(.chart-empty) .chart-empty{inset:0;z-index:auto;padding:30px;border:0;background:transparent}
+
+.main:after{content:"© 2026 Mert Can KESKİN · Tüm hakları saklıdır.";display:block;padding:24px 12px 18px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:.35px}
