@@ -116,3 +116,33 @@ body:has(.sidebar.open) .mobile-nav,body:has(.sidebar.open) .theme-toggle{displa
 .main:after{content:"© 2026 Mert Can KESKİN · Tüm hakları saklıdır.";display:block;padding:24px 12px 18px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:.35px}
 
 .auth-panel{position:relative;padding-bottom:72px}.auth-panel:after{content:"© 2026 Mert Can KESKİN · Tüm hakları saklıdır.";position:absolute;left:20px;right:20px;bottom:22px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:.35px}
+
+
+/* Giriş ve kayıt ekranı son dokunuşları */
+.auth-panel{
+  position:relative;
+  overflow:hidden;
+  padding-bottom:72px;
+  background:
+    radial-gradient(circle at 92% 12%,rgba(112,87,217,.14),transparent 26%),
+    radial-gradient(circle at 8% 88%,rgba(30,169,143,.10),transparent 24%),
+    linear-gradient(145deg,#fff 0%,#fbfaff 56%,#f4f1ff 100%);
+}
+.auth-panel:before{
+  content:"";
+  position:absolute;
+  width:240px;
+  height:240px;
+  right:-105px;
+  top:-105px;
+  border:1px solid rgba(112,87,217,.16);
+  border-radius:50%;
+  box-shadow:0 0 0 34px rgba(112,87,217,.035),0 0 0 68px rgba(112,87,217,.025);
+  pointer-events:none;
+}
+.auth-panel:after{font-weight:700;color:#69637d}
+.auth-card{position:relative;z-index:1}
+@media(max-width:760px){
+  .auth-panel{background:linear-gradient(160deg,#fff,#f6f3ff);padding-bottom:66px}
+  .auth-panel:before{width:150px;height:150px;right:-82px;top:-78px}
+}
