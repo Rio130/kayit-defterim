@@ -10,3 +10,4 @@
 !.env.example
 Backend/MoneyTrack.API/appsettings.json
 Backend/MoneyTrack.API/appsettings.Development.json
+Backend/WebApplication1/
