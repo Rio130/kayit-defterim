@@ -146,3 +146,29 @@ body:has(.sidebar.open) .mobile-nav,body:has(.sidebar.open) .theme-toggle{displa
   .auth-panel{background:linear-gradient(160deg,#fff,#f6f3ff);padding-bottom:66px}
   .auth-panel:before{width:150px;height:150px;right:-82px;top:-78px}
 }
+
+/* Kategori simgesi yalnızca seçilen emojiyi gösterir; uzun/eski değerler taşamaz. */
+.category-form select{
+  width:100%;
+  height:46px;
+  border:1px solid #dfe2eb;
+  border-radius:11px;
+  background:var(--card);
+  color:var(--ink);
+  padding:0 13px;
+  outline:none;
+  font-size:21px;
+  cursor:pointer;
+}
+.category-list>div{min-width:0}
+.category-icon{
+  width:42px;
+  min-width:42px;
+  max-width:42px;
+  height:42px;
+  overflow:hidden;
+  white-space:nowrap;
+  line-height:1;
+}
+.category-list>div>span:nth-child(2){min-width:0}
+.category-list b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
