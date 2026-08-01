@@ -113,9 +113,9 @@ body:has(.sidebar.open) .mobile-nav,body:has(.sidebar.open) .theme-toggle{displa
 /* Grafik çizgilerini boş durum mesajının altında görünür tut */
 .chart-wrap:has(.chart-empty) .chart-empty{inset:0;z-index:auto;padding:30px;border:0;background:transparent}
 
-.main:after{content:"© 2026 Mert Can KESKİN · Tüm hakları saklıdır.";display:block;padding:24px 12px 18px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:.35px}
+.main:after{content:"© 2026 Mert Can Keskin. Tüm hakları saklıdır.";display:block;padding:24px 12px 18px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:.35px}
 
-.auth-panel{position:relative;padding-bottom:72px}.auth-panel:after{content:"© 2026 Mert Can KESKİN · Tüm hakları saklıdır.";position:absolute;left:20px;right:20px;bottom:22px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:.35px}
+.auth-panel{position:relative;padding-bottom:72px}.auth-panel:after{content:"© 2026 Mert Can Keskin. Tüm hakları saklıdır.";position:absolute;left:20px;right:20px;bottom:22px;text-align:center;color:var(--muted);font-size:11px;letter-spacing:.35px}
 
 
 /* Giriş ve kayıt ekranı son dokunuşları */
